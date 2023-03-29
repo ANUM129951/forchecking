@@ -1,0 +1,130 @@
+/*
+* Theme Animations Transitions
+*/
+
+/* Color and background transitions */
+a,
+.btn,
+button,
+input[type="submit"],
+input[type="button"],
+.woocommerce #content input.button,
+.woocommerce #respond input#submit,
+.woocommerce .button,
+.woocommerce-page .button,
+.woocommerce-page input,
+.woocommerce ul.tabs li,
+.woocommerce-page ul.tabs li,
+.woocommerce.widget .product-categories li .cat-menu-close,
+.widget_layered_nav ul li,
+.widget_meta ul li,
+.widget_archive ul li,
+.widget_categories ul li,
+.widget_pages ul li,
+body .owl-theme .owl-controls .owl-page span,
+body .owl-theme .owl-dots .owl-dot span,
+body .owl-theme .owl-controls .owl-nav div.owl-prev:hover,
+body .owl-theme .owl-controls .owl-nav div.owl-next:hover,
+.navigation-post .nav-post-name,
+.sidebar .widget.widget_davenport_posts_slider .widget-post-slider-wrapper .widget-post-details-wrapper {
+    -webkit-transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+    transition: color 0.25s ease, background 0.25s ease, border-color 0.25s ease;
+}
+
+/* Opacity transitions */
+.header-menu .menu-top-menu-container-toggle,
+body .owl-theme .owl-controls,
+body .owl-theme .owl-controls .owl-nav div,
+.search-close-btn,
+.single-post #post-sidebar > li.widget:last-child {
+    -webkit-transition: opacity 0.25s ease;
+    transition: opacity 0.25s ease;
+}
+
+/* All transitions */
+.scroll-to-top,
+.davenport-post .davenport-post-image-wrapper,
+#sb_instagram .sbi_photo_wrap .sbi_photo,
+.single-post .davenport-social-share-fixed,
+.post-social-wrapper .post-social-frame,
+.davenport-overlay-post.davenport-post .post-details-bottom.post-details-bottom-inline,
+.davenport-overlay-post.davenport-post .davenport-post-details-inner,
+.navbar .nav > li {
+	-webkit-transition: all 0.25s ease;
+    transition: all 0.25s ease;
+}
+
+/*  All transitions - slow */
+header .search-toggle-wrapper .searchform,
+.davenport-post .davenport-post-details,
+.navigation-post .nav-post-button-title i {
+	-webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
+}
+
+/* Images hover effects transitions */
+.blog-enable-images-animations .davenport-post-image-wrapper .davenport-post-image,
+.blog-enable-images-animations .davenport-image-wrapper .davenport-image {
+	-webkit-transition: transform 0.5s ease;
+	transition: transform 0.5s ease;
+}
+
+/* Worth reading post block transition */
+.post-worthreading-post-container,
+.post-worthreading-post-wrapper .post-worthreading-post-button {
+	-webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+/* Drop down menus transitions */
+@media (min-width: 991px) {
+	/* Main menu */
+	.nav .sub-menu {
+	    display: block;
+	    margin: 0;
+	    transition: margin .2s ease-in,opacity .2s ease-in, transform .2s ease-in, visibility .2s ease-in;
+	    -webkit-transition: margin .2s ease-in,opacity .2s ease-in, transform .2s ease-in, visibility .2s ease-in;
+
+	    opacity: 0;
+	    visibility: hidden;
+	}
+	.nav li:hover > .sub-menu {
+	    display: block;
+
+	    opacity: 1;
+	    visibility: visible;
+	}
+	.nav .sub-menu > li > .sub-menu {
+		margin-top: -1px;
+	}
+	.nav .sub-menu > li:hover > .sub-menu {
+		right: -101%;
+		margin-top: -1px;
+	}
+
+	/* Top menu */
+	.header-menu .sub-menu {
+	    display: block;
+	    margin-top: 0;
+	    opacity: 0;
+	    transition: margin .2s ease-in,opacity .2s ease-in, transform .2s ease-in, visibility .2s ease-in;
+	    -webkit-transition: margin .2s ease-in,opacity .2s ease-in, transform .2s ease-in, visibility .2s ease-in;
+
+	    opacity: 0;
+	    visibility: hidden;
+	}
+	.header-menu li:hover > .sub-menu {
+	    display: block;
+	    opacity: 1;
+	    margin-top: 0;
+
+	    opacity: 1;
+	    visibility: visible;
+	}
+	.header-menu .sub-menu > li > .sub-menu {
+		margin-top: 0;
+	}
+	.header-menu .sub-menu > li:hover > .sub-menu{
+		right: -99.5%;
+	}
+}
